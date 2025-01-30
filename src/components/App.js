@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <textarea type="text" className="textarea" onChange={handleChange} />
+      <textarea className="textarea" onChange={handleChange} />
       {loading ? (
         <p className="loading">Loading...</p>
       ) : (
