@@ -11,17 +11,13 @@ export default function App() {
   // }, []);
   handleChange = (e) => {
     setData(e.target.value);
-    setLoading(false);
+    // setLoading(false);
   };
 
   return (
     <div className="app">
       <textarea className="textarea" onChange={handleChange} />
-      {loading ? (
-        <p className="loading">Loading...</p>
-      ) : (
         <div className="preview">{data}</div>
-      )}
     </div>
   );
 }
