@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./../styles/App.css";
+// import "./../styles/App.css";
 
 export default function App() {
   const [data, setData] = useState("");
@@ -15,7 +15,7 @@ export default function App() {
   };
 
   return (
-    <div className="App">]
+    <div className="app">
       <textarea type="text" className="textarea" onChange={handleChange} />
       {loading ? (
         <p className="loading">Loading...</p>
